@@ -209,7 +209,12 @@ footer {
   display: inline-block;
   padding-bottom: 10px;
 }
-
+/* DISH GRID CONTAINER */
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
 /* FEATURED DISH CARDS FIXED */
 .dish-card {
   background: #fff;
