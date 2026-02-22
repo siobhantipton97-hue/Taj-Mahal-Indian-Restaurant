@@ -34,15 +34,16 @@ nav a {
   font-weight: 500;
 }
 
-/* HERO */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url('503757567_9962981003809101_7873670468133059846_n.jpg') center/cover;
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('503757567_9962981003809101_7873670468133059846_n.jpg') 
+    center 70% / cover no-repeat;
+
   color: white;
   text-align: center;
   padding: 120px 20px;
 }
-
 .hero h2 {
   font-family: 'Playfair Display', serif;
   font-size: 42px;
