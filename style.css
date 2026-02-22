@@ -44,6 +44,7 @@ nav a {
   text-align: center;
   padding: 120px 20px;
 }
+
 .hero h2 {
   font-family: 'Playfair Display', serif;
   font-size: 42px;
@@ -96,13 +97,17 @@ nav a {
   border-radius: 8px;
 }
 
-/* DISH GRID */
+/* DISH GRID (original - kept) */
 .dish-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  /* ADDED FIX */
+  align-items: stretch;
 }
 
+/* Original Dish Cards (kept untouched) */
 .dish {
   background: white;
   border-radius: 8px;
@@ -142,6 +147,8 @@ footer {
     flex-direction: column;
   }
 }
+
+/* MENU HEADER */
 .menu-header {
   text-align: center;
   padding: 60px 20px;
@@ -176,6 +183,7 @@ footer {
   font-weight: bold;
   color: #b22222;
 }
+
 /* Featured Dishes */
 
 .featured-dishes {
@@ -192,18 +200,18 @@ footer {
   padding-bottom: 10px;
 }
 
-.dish-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-
+/* FEATURED DISH CARDS FIXED */
 .dish-card {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   text-align: left;
+
+  /* ADDED FIX */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .dish-card img {
@@ -216,6 +224,17 @@ footer {
   padding: 15px 15px 5px;
   margin: 0;
 }
+
+.dish-card p {
+  padding: 0 15px 20px;
+  font-size: 14px;
+  color: #555;
+
+  /* ADDED FIX */
+  flex-grow: 1;
+}
+
+/* Responsive Grid */
 @media (max-width: 1000px) {
   .dish-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -226,9 +245,4 @@ footer {
   .dish-grid {
     grid-template-columns: 1fr;
   }
-}
-.dish-card p {
-  padding: 0 15px 20px;
-  font-size: 14px;
-  color: #555;
 }
