@@ -1,1 +1,143 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F1E4;
+  color: #2E1A0F;
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  background: #A11212;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-size: 24px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1604908177522-402d8d8c9d66') center/cover;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background: #E0A106;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.hero button:hover {
+  background: #c78d05;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-box {
+  width: 280px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+/* DISH GRID */
+.dish-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.dish {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dish img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dish-content {
+  padding: 15px;
+}
+
+/* CONTACT */
+.contact {
+  background: #A11212;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: #2E1A0F;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+/* MOBILE */
+@media(max-width: 768px){
+  nav {
+    flex-direction: column;
+  }
+}
