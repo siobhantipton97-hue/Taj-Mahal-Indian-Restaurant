@@ -283,3 +283,17 @@ footer {
   height: 100%;
   border: 0;
 }
+.btn {
+  background: #1877F2;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #145dbf;
+}
